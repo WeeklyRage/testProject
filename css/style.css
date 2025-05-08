@@ -224,7 +224,7 @@ a {
     top: 0; 
     width: 39.739583333333336vw;
     height: 100%;
-    background-image: url('/img/1.png');   
+    background-image: url('./img/1.png');   
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
@@ -335,7 +335,7 @@ a {
     top: 0; 
     width: 32.395833333333336vw;
     height: 100%;
-    background-image: url('/img/2.png');   
+    background-image: url('./img/2.png');   
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
@@ -347,7 +347,7 @@ a {
     top: 0; 
     width: 32.395833333333336vw;
     height: 100%;
-    background-image: url('/img/3.png');  
+    background-image: url('./img/3.png');  
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
@@ -416,17 +416,27 @@ a {
     margin-bottom: 5.208333333333334vw;
     overflow: hidden;
 } 
- 
-.wrapper-form__bg::before {
-    content: ""; 
+
+.wrapper-form__bg{
     position: absolute;
-    right: 0;
-    top: 0; 
-    width: 59.47916666666667vw;
-    height: 32.708333333333336vw;
-    background-image: url('/img/4.png');
-    background-repeat: no-repeat;   
-    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 1.5625vw;
+}
+ 
+.wrapper-form__bg::before { 
+    content: "";
+    position: absolute;
+    right: -334px;
+    top: 0px;
+    width: 50.479167vw;
+    height: 33.708333vw;
+    background-image: url(./img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
     filter: blur(1px);
     z-index: 2;
 }
@@ -444,9 +454,9 @@ a {
     position: absolute;
     left: 46.61458333333333vw;
     top: -6.71875vw; 
-    width: 31.197916666666664vw;
-    height: 47.03125vw;
-    background-image: url('/img/women.png');
+    width: 36.197917vw;
+    height: 43.03125vw;
+    background-image: url('./img/women.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;  
@@ -905,7 +915,7 @@ a {
         top: 0; 
         width: 763px;
         height: 100%;
-        background-image: url('/img/1.png');   
+        background-image: url('./img/1.png');   
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 2;
@@ -1011,7 +1021,7 @@ a {
         top: 0; 
         width: 622px;
         height: 100%;
-        background-image: url('/img/2.png');   
+        background-image: url('./img/2.png');   
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 2;
@@ -1024,7 +1034,7 @@ a {
         top: 0; 
         width: 622px;
         height: 100%;
-        background-image: url('/img/3.png');  
+        background-image: url('./img/3.png');  
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 2;
